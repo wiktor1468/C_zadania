@@ -18,7 +18,7 @@ int main()
 
     for (int i = 0; i < len; i++)
     {
-        for (int j = 0; i < len; i++)  // Uwaga: To powinno być "j < len" zamiast "i < len"
+        for (int j = 0; i < len; i++)
         {
             sumaM += grades[i][0];
             sumaF += grades[i][1];
