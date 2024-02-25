@@ -1,30 +1,55 @@
+#include <cstdio>
+#include <string>
+#include <iostream>
 
-#include <stdio.h>
+using namespace std;
 
-int main()
-{
-    //zd2
-    int grades[5][2] = {
-            {5, 6},
-            {4, 2},
-            {3, 5},
-            {3, 5},
-            {5, 6}
-    };
-    int len = sizeof(grades) / sizeof(grades[0]);
-    int sumaM = 0;
-    int sumaF = 0;
-    //printf("%d", sizeof(grades[0])/sizeof(grades[0][0]));  //liczba kolumn
+int main() {
+    printf("Podaj ilosc rund");
 
-    for (int i = 0; i < len; i++)
-    {
-            sumaM += grades[i][0];
-            sumaF += grades[i][1];
+     int iloscRund =0;
+    scanf("%d",&iloscRund);
+    int res[iloscRund][3];  // Zmieniony typ na int
+
+    for (int i = 0; i < iloscRund; ++i) {
+        printf("Podaj ruch: (p=papier, k=kamien, n=nozyce)\n");
+        char move1;
+        scanf(" %c", &move1);  // Zmieniony sposób wczytywania na %c
+
+        printf("Podaj ruch: (p=papier, k=kamien, n=nozyce)\n");
+        char move2;
+        scanf(" %c", &move2);  // Zmieniony sposób wczytywania na %c
+
+        res[i][0] = move1;
+        res[i][1] = move2;
+
+        // Warunki gry
+        if (move1 == move2) {
+            res[i][2] = 0;  // Remis
+        } else if ((move1 == 'p' && move2 == 'k') || (move1 == 'k' && move2 == 'n') || (move1 == 'n' && move2 == 'p')) {
+            res[i][2] = 1;  // Wygrywa gracz 1
+        } else {
+            res[i][2] = 2;  // Wygrywa gracz 2
+        }
+
+
     }
 
-    printf("Srednia z matematyki: %.2f\n", sumaM / (float)(len ));
-    printf("Srednia z fizyki : %.2f\n", sumaF / (float)(len ));
-    printf("%d",len);
+    //wyswietlanie
+    printf("Wpisz 'scores', aby zobaczyc wyniki: ");
+    string komenda;
+    cin >> komenda;
+    if(komenda=="scores")
+    {
+        printf("Zawartosc tablicy :\n");
+        for (int i = 0; i < iloscRund; ++i) {
+            printf("%c vs %c - Wynik: %d\n", res[i][0], res[i][1], res[i][2]);
+        }
+    }
+
+
+
+
 
 
     return 0;
