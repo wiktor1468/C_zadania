@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-void cw2()
+int main()
 {
     int grades[5][2] = {
             {5, 6},

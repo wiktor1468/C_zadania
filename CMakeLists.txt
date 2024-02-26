@@ -6,4 +6,8 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(C_zd1
         cw1.cpp
         cw2.cpp
+        cw6.cpp
+        cw3.cpp
+        cw4.cpp
+        cw5.cpp
 )
