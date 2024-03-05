@@ -15,3 +15,13 @@ add_executable(
         _Zadania_1_Zad_1_ _Zadania_1_Zad_1_.c)
 add_executable(
         _Zadania_1_Zad_6_ _Zadania_1_Zad_6_.c)
+add_executable(
+        _Zadania_2_Zad_5_ _Zadania_2_Zad_5_.c)
+add_executable(
+        _Zadania_2_Zad_1_ _Zadania_2_Zad_1_.c)
+add_executable(
+        _Zadania_2_Zad_2_ _Zadania_2_Zad_2_.c)
+add_executable(
+        _Zadania_2_Zad_3_ _Zadania_2_Zad_3_.c)
+add_executable(
+        _Zadania_2_Zad_4_ _Zadania_2_Zad_4_.c)
