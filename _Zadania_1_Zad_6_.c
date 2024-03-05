@@ -1,11 +1,8 @@
 //
 // Created by wikto on 26.02.2024.
 //
-#include <cstdio>
-#include <string>
-#include <iostream>
-
-using namespace std;
+#include "stdio.h"
+#include "io.h"
 
 int main() {
     printf("Podaj ilosc rund");
@@ -40,14 +37,15 @@ int main() {
 
     //wyswietlanie
     printf("Wpisz 'scores', aby zobaczyc wyniki: ");
-    string komenda;
-    cin >> komenda;
-    if(komenda=="scores")
-    {
+    char komenda[10];
+    scanf("%s", komenda);
+    if (strcmp(komenda, "scores") == 0) {
         printf("Zawartosc tablicy :\n");
         for (int i = 0; i < iloscRund; ++i) {
             printf("%c vs %c - Wynik: %d\n", res[i][0], res[i][1], res[i][2]);
         }
+    } else {
+        printf("Bledna komenda.\n");
     }
 
 
