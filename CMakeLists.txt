@@ -4,10 +4,12 @@ project(C_zd1)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(C_zd1
-        cw1.cpp
+
         cw2.cpp
         cw6.cpp
         cw3.cpp
         cw4.cpp
         cw5.cpp
 )
+add_executable(
+        _Zadania_1_Zad_1_ _Zadania_1_Zad_1_.c)

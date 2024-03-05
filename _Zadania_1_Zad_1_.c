@@ -1,6 +1,5 @@
-#include <iostream>
-#include <string>
-using namespace std;
+#include "io.h"
+#include "stdio.h"
 
 int main() {
     char imie[25];
