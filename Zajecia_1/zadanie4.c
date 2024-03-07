@@ -1,7 +1,7 @@
 //
 // Created by wikto on 21.02.2024.
 //
-#include <cstdio>
+#include <stdio.h>
 int main()
 {
     for (int i = 1; i <= 200; i++) {

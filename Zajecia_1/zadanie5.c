@@ -1,7 +1,7 @@
 //
 // Created by wikto on 22.02.2024.
 //
-#include <cstdio>
+#include <stdio.h>
 int main() {
     printf("Podaj liczbe: ");
     int maxVal=0;
