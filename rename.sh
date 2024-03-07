@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 rename_files_recursively() {
