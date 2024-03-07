@@ -1,8 +1,10 @@
 //
 // Created by wikto on 26.02.2024.
 //
+#include <string.h>
 #include "stdio.h"
-#include "io.h"
+
+
 
 int main() {
     printf("Podaj ilosc rund");
