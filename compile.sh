@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Find all C files recursively in subdirectories
