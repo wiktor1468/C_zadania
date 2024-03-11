@@ -19,3 +19,4 @@ add_executable( Zajecia2zd4 Zajecia_2/Z2z4.c)
 add_executable( Zajecia2zd5 Zajecia_2/Z2z5.c)
 
 add_executable( Zajecia3zd1 Zajecia_3/Zad_1.c)
+add_executable( Zajecia3zd2 Zajecia_3/Zad_2.c)
