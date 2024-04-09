@@ -25,4 +25,14 @@ add_executable( Zajecia4zd1 Zajecia_4/Zad_1.c)
 add_executable( Zajecia4zd2 Zajecia_4/Zad_2.c)
 add_executable( Zajecia4zd3 Zajecia_4/Zad_3.c)
 
+add_executable( Zajecia5zd1 Zajecia_5/Zad_1.c)
+add_executable( Zajecia5zd2 Zajecia_5/Zad_2.c)
+add_executable( Zajecia5zd3 Zajecia_5/Zad_3.c)
+add_executable( Zajecia5zd4 Zajecia_5/Zad_4.c)
+add_executable( Zajecia5zd5 Zajecia_5/Zad_5.c)
+add_executable( Zajecia5zd6 Zajecia_5/Zad_6.c)
+
+
+
+
 
