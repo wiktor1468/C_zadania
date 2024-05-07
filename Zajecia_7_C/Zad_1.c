@@ -67,10 +67,10 @@ int main() {
         return 1;
     }
 
-    char line[100]; // Assuming maximum line length is 100 characters
+    char line[400]; // Assuming maximum line length is 100 characters
     Node *head = NULL; // Initialize the linked list head
     while (fgets(line, sizeof(line), file)) { // Read lines from the file
-        char numberStr[20]; // Buffer to store the word representation of a number
+        char numberStr[80]; // Buffer to store the word representation of a number
         int wordIndex = 0; // Index to track the current position in the word
         int isFirstNumber = 1; // Flag to indicate whether it's the first number in the row
         for (int index = 0; line[index] != '\0'; ++index) { // Iterate over each character in the line
