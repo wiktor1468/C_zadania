@@ -40,3 +40,4 @@ add_executable( Zajecia7Czd1 Zajecia_7_C/Zad_1.c)
 add_executable( Zajecia7Czd2 Zajecia_7_C/Zad_2.c)
 
 
+add_executable( Zajecia7Cppzd1 Zajecia_7_Cpp/Zad_1.cpp)
