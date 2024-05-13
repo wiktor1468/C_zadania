@@ -3,7 +3,7 @@
 # Find all C files recursively in subdirectories
 find . -name '*.c' | while read file; do
     if [ -f "$file" ]; then
-        filename=$(basename "$file" .c)
+        filename=$(basename "$file" .cpp)
         output_path=$(dirname "$file")
         clang -o "${output_path}/${filename}" "$file"
         clang -o "${output_path}/${filename}.exe" "$file"
