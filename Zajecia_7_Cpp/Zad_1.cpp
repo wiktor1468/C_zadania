@@ -34,12 +34,14 @@ int main() {
 
     // Process each row in the file
     string row;
+    int sum=0;
     while (getline(inputFile, row)) {
         // Regular expression to find words representing numbers and digits
         regex wordPattern("(one|two|three|four|five|six|seven|eight|nine)|([0-9])");
         smatch match;
 
         string result;
+
 
         // Find and replace words and digits with their numerical equivalents
         auto textIterator = row.cbegin();
@@ -54,11 +56,14 @@ int main() {
 
         // Output result
         result = result.substr(0,1)+result.substr(result.length()-1,1);
-        cout << "Output for row: " << result << endl;
+        sum += stoi(result);
+
     }
 
     // Close input file
     inputFile.close();
+
+    cout<<"sum: "<<sum<<endl;
 
     return 0;
 }
