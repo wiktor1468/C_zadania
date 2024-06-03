@@ -42,3 +42,5 @@ add_executable( Zajecia7Czd2 Zajecia_7_C/Zad_2.c)
 
 add_executable( Zajecia7Cppzd1 Zajecia_7_Cpp/Zad_1.cpp)
 add_executable( Zajecia7Cppzd2 Zajecia_7_Cpp/Zad_2.cpp)
+
+add_executable( gameBSO game_project/BSO.cpp)
