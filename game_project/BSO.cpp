@@ -39,8 +39,9 @@ void rescueMission(Player* player) {
         std::cout << "Experience gained: 10" << std::endl;
     } else {
         std::cout << "Invalid choice, you lost valuable time!" << std::endl;
-        player->health -= 10;
+
         std::cout << "Health lost: 10" << std::endl;
+        player->damageTaken(10);
     }
     exploreStage++;
 }
@@ -130,9 +131,9 @@ void fightDragon(Player* player) {
     }
     else {
         std::cout << "Invalid choice, the dragon attacks you!" << std::endl;
-        player->health -= 20;
+
         std::cout << "Health lost: -20" << std::endl;
-        player->damageTaken();
+        player->damageTaken(20);
     }
     exploreStage++;
 }
@@ -150,7 +151,8 @@ void battleWithBoss(Player* player, bool isSecondRound = false) {
         std::cout << "An ultimately wild " << FinallDragon.type << " dragon appears! Wow, he is so strong" << std::endl;
         FinallDragon.attack();
 
-        player->health -= 20;
+
+        player->damageTaken(20);
         std::cout << "He is so strong that you lose health just by looking at him" << std::endl;
         std::cout << "Health lost: -20" << std::endl;
     }
@@ -192,12 +194,9 @@ void battleWithBoss(Player* player, bool isSecondRound = false) {
             break;
         default:
             std::cout << "Invalid choice, the dragon attacks you!" << std::endl;
-            player->health -= 20;
             std::cout << "Health lost: -20" << std::endl;
-            if (player->health <= 0) {
-                std::cout << "You died. That's very sad, goodbye" << std::endl;
-                exit(0); // End the game
-            }
+
+            player->damageTaken(20);
             break;
     }
 }
@@ -260,6 +259,7 @@ int main()
 
     while (exploring) {
         std::cout << "--------------------------------------------------------" << std::endl;
+        player->showHealth();
         std::cout << "Where will " << player->name << " go next?" << std::endl;
         std::cout << "1. Moonlight Markets\n2. Grand Library\n3. Shimmering Lake\n4. Fight a dragon\n5. Rescue mission\n6. Show inventory\n7. Show skills\n8. Exit" << std::endl;
 
